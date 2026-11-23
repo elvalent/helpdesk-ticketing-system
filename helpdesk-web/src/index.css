@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #F5EFE6; font-family: 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+#root { min-height: 100vh; }
+input, textarea, select, button { font-family: inherit; }
+input:focus, textarea:focus, select:focus { outline: none; border-color: #4B2E2B !important; box-shadow: 0 0 0 3px rgba(75,46,43,0.08); }
+button:active { transform: scale(0.98); }
+.page { min-height: 100vh; background: #F5EFE6; display: flex; align-items: center; justify-content: center; padding: 16px; }
+.card { width: 100%; max-width: 420px; background: #FFFDF9; border-radius: 20px; padding: 32px; box-shadow: 0 20px 40px rgba(75,46,43,0.08); border: 1px solid #E8DDD0; }
+.dash-wrap { max-width: 780px; margin: 0 auto; padding: 20px; width: 100%; }
+.input { padding: 13px 14px; border-radius: 10px; border: 1px solid #E8DDD0; background: #FFFBF6; outline: none; font-size: 15px; color: #3E2F2A; width: 100%; }
+.btn { padding: 13px; border-radius: 10px; border: none; background: #4B2E2B; color: white; font-weight: 600; font-size: 15px; cursor: pointer; width: 100%; }
+.label { font-size: 13px; font-weight: 600; color: #4B2E2B; display: block; margin-bottom: -8px; }
+@media (max-width: 480px) {
+  .page { padding: 0; align-items: stretch; background: #FFFDF9; }
+  .card { max-width: 100%; border-radius: 0; border: none; box-shadow: none; padding: 28px 20px; display: flex; flex-direction: column; justify-content: center; min-height: 100vh; }
+  .dash-wrap { padding: 16px 14px; }
+  .dash-header { flex-direction: column !important; gap: 12px; }
+  .ticket-top { flex-direction: column !important; align-items: flex-start !important; }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .card { max-width: 480px; }
+  .dash-wrap { max-width: 680px; }
+}
+@media (min-width: 1200px) {
+  .card { max-width: 440px; padding: 38px; }
+  .dash-wrap { max-width: 860px; }
+}
+/* KHUSUS DASHBOARD IT DI HP: kartu 2 kolom, chart jadi 1 kolom */
+@media (max-width: 700px) {
+  .dash-wrap > div:nth-child(3) { grid-template-columns: repeat(2, 1fr) !important; }
+  .dash-wrap > div:nth-child(5) { grid-template-columns: 1fr !important; }
+}

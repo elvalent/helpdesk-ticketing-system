@@ -1,0 +1,28 @@
+# Laravel
+helpdesk-api/vendor/
+helpdesk-api/node_modules/
+helpdesk-api/.env
+helpdesk-api/.env.backup
+helpdesk-api/.env.production
+helpdesk-api/storage/*.key
+helpdesk-api/storage/framework/cache/
+helpdesk-api/storage/framework/sessions/
+helpdesk-api/storage/framework/views/
+helpdesk-api/storage/logs/
+helpdesk-api/bootstrap/cache/
+helpdesk-api/public/hot
+
+# React / Vite
+helpdesk-web/node_modules/
+helpdesk-web/dist/
+helpdesk-web/dist-ssr/
+helpdesk-web/*.local
+helpdesk-web/.env
+helpdesk-web/.env.local
+
+# Umum
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
